@@ -70,10 +70,17 @@ export default {
 div {
   --vue-green: rgb(65, 184, 131);
   --vue-darkgreen: #2c3e50;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 div > :not(:last-child) {
   margin-bottom: 1.5rem;
+}
+
+h1 {
+  font-size: 20px;
 }
 
 button {
@@ -96,8 +103,7 @@ button:active {
 
 .joke,
 .loading {
-  width: max-content;
-  margin: 0 auto;
+  max-width: max-content;
   padding: 1rem 2rem;
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 8px;
@@ -109,10 +115,15 @@ button:active {
 }
 
 .credit {
-  width: 100%;
   position: fixed;
   bottom: 5px;
   font-size: small;
   text-align: center;
+}
+
+@media (min-width: 640px) {
+  h1 {
+    font-size: 32px;
+  }
 }
 </style>
