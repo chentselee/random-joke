@@ -14,8 +14,9 @@
       <a
         href="
       https://icanhazdadjoke.com/
-      
       "
+        target="_blank"
+        rel="noopener noreferrer"
         >https://icanhazdadjoke.com/</a
       >
     </section>
